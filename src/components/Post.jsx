@@ -1,11 +1,18 @@
 import { Card, Avatar } from 'antd'
+import { HeartOutlined } from '@ant-design/icons'
 
 
 
 export default function Post({ post }) {
+
     return(
         <Card 
         hoverable 
+        actions={[
+            <HeartOutlined onClick={} />
+            
+            
+        ]}
         style={{width: 300}}
         cover={
             <img alt={post.description} src={post.photo} />
